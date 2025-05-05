@@ -55,12 +55,12 @@ function startGame() {
   console.log("Game board array:", boardArray);
 
   console.log(boardArray[2][3]); // Accessing the first cell (row 0, column 0)
-
-    
+  
+  let placedShips = [];
+  
     function placeShips ()
     {
         let shipSizes = [shipSize1, shipSize2, shipSize3, shipSize4, shipSize5];
-        let placedShips = [];
 
         for (let size of shipSizes) {
             let placed = false;
